@@ -71,3 +71,7 @@ You usually need this only once. The wait and the sweep time are set in the `[sw
 
 - **Only one program can use a vJoy device at a time.** Do not run Joystick Gremlin (activated) or the vJoy Feeder on the same device. Otherwise the script stops with a "device is busy" error.
 - **Settings errors:** if `configuration.ini` is missing, or a setting is missing or invalid, the script stops before it opens vJoy. The error names the setting to fix.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
