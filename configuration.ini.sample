@@ -1,0 +1,37 @@
+; rudder.py settings.
+; Copy this file to configuration.ini (next to rudder.py) and edit the copy.
+; Every key below is required. Comments start with ";".
+
+[vjoy]
+; Full path to the vJoy interface DLL.
+dll = C:\Program Files\vJoy\x64\vJoyInterface.dll
+; vJoy device number (1..16).
+device_id = 1
+; vJoy axis to drive: X, Y, Z, Rx, Ry, Rz, Slider or Dial.
+; Enable it for this device in "Configure vJoy".
+axis = Rz
+
+[joystick]
+; Part of the physical joystick name (case does not matter).
+name = Attack 3
+; Physical button numbers, as printed on the stick.
+button_left = 4
+button_right = 5
+
+[rudder]
+; Axis travel when a button is fully held, as a fraction of full travel (more than 0, at most 1).
+; Monitor vJoy position = 50% +/- max_deflection x 50%, e.g. 0.70 -> 15% / 50% / 85%.
+max_deflection = 0.70
+; Seconds to go from center to max_deflection while a button is held.
+ramp_time = 0.50
+; Seconds to go from max_deflection back to center after release.
+return_time = 0.20
+; How many times per second the buttons are read and the axis is updated.
+loop_hz = 100
+
+[sweep]
+; Used only with "py rudder.py --sweep".
+; Seconds to wait before the sweep starts (time to click the axis binding field in the game).
+delay = 5
+; Seconds of automatic left/right axis movement.
+duration = 10

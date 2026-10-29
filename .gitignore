@@ -1,0 +1,19 @@
+# Local settings (copy configuration.ini.sample to create it)
+configuration.ini
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+
+# Claude Code local settings
+.claude/settings.local.json
+
+# Editors and OS
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
